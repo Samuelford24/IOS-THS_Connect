@@ -212,8 +212,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homerooms A-C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWa-d4-ejh">
-                                                    <rect key="frame" x="143" y="11" width="129" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homerooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWa-d4-ejh">
+                                                    <rect key="frame" x="143" y="11" width="94" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -222,107 +222,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="SOD-e0-WNl" kind="show" id="vMf-o7-Cyf"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dB4-Rf-4wv">
-                                        <rect key="frame" x="0.0" y="292" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dB4-Rf-4wv" id="UrM-vX-0yl">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homerooms D-G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXG-6E-ckU">
-                                                    <rect key="frame" x="142" y="11" width="130" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="SOD-e0-WNl" kind="show" id="Gxw-P8-9Ee"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="PRm-kW-Vaz">
-                                        <rect key="frame" x="0.0" y="336" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PRm-kW-Vaz" id="4a5-op-Iep">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homerooms H-L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEe-cQ-gWH">
-                                                    <rect key="frame" x="143" y="11" width="128" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="SOD-e0-WNl" kind="show" id="chL-SO-0UJ"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="p3R-2d-ENJ">
-                                        <rect key="frame" x="0.0" y="380" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p3R-2d-ENJ" id="EAN-N8-vib">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homerooms M-O" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHn-At-Lmx">
-                                                    <rect key="frame" x="141" y="11" width="133" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="SOD-e0-WNl" kind="show" id="CFc-aQ-hlY"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HuF-7j-GfM">
-                                        <rect key="frame" x="0.0" y="424" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HuF-7j-GfM" id="j0J-iT-qeE">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homerooms P-S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKk-hQ-Dwz">
-                                                    <rect key="frame" x="144" y="11" width="127" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="SOD-e0-WNl" kind="show" trigger="accessoryAction" id="5P6-0i-L3F"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="S31-xx-7t6">
-                                        <rect key="frame" x="0.0" y="468" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S31-xx-7t6" id="Axo-kI-rZd">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homerooms T-Z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzC-lT-Usf">
-                                                    <rect key="frame" x="144" y="11" width="126" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="SOD-e0-WNl" kind="show" id="Xyc-fs-d0S"/>
+                                            <segue destination="NDg-uj-oI9" kind="show" id="XCo-CC-qZA"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -337,7 +237,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veA-b8-D9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2439" y="-2057"/>
+            <point key="canvasLocation" x="2184" y="-2067"/>
         </scene>
         <!--Toggle Classes-->
         <scene sceneID="14Z-bv-NW7">
@@ -541,6 +441,7 @@
                                                 <constraint firstItem="99U-Tx-fgP" firstAttribute="centerY" secondItem="SaD-9C-WAw" secondAttribute="centerY" id="n18-2i-Fbs"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <gestureRecognizers/>
                                         <connections>
                                             <outlet property="c3" destination="tRU-a0-zVq" id="dHT-SX-vrV"/>
                                             <outlet property="id3" destination="XeK-BW-HMl" id="jbx-LR-TB4"/>
@@ -625,6 +526,7 @@
                                                 <constraint firstItem="8Ej-kW-3H0" firstAttribute="top" secondItem="wNX-4a-2UQ" secondAttribute="bottom" constant="8" id="z5p-S0-fir"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <gestureRecognizers/>
                                         <connections>
                                             <outlet property="grade" destination="wNX-4a-2UQ" id="4iM-Lf-lEx"/>
                                             <outlet property="name" destination="MeY-w1-cEG" id="01Y-5M-H0I"/>
@@ -1121,6 +1023,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gEp-YH-KQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2806" y="170"/>
+        </scene>
+        <!--Teachers List-->
+        <scene sceneID="cw0-4O-5U9">
+            <objects>
+                <tableViewController id="Ee3-9T-UhW" customClass="HRTeachersList" customModule="THS_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xaC-qJ-DUV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="hr" id="u5z-8p-TEU">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u5z-8p-TEU" id="wCA-vL-sQm">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ee3-9T-UhW" id="MZN-VS-4x3"/>
+                            <outlet property="delegate" destination="Ee3-9T-UhW" id="zEZ-vj-d6l"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Vrd-yg-V3x"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HWm-gx-T6B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5051" y="-476"/>
         </scene>
         <!--Item-->
         <scene sceneID="Gd3-B6-X7z">
@@ -1827,6 +1758,81 @@
             </objects>
             <point key="canvasLocation" x="3033" y="-1170"/>
         </scene>
+        <!--Homeroom List-->
+        <scene sceneID="8EE-6Q-4Je">
+            <objects>
+                <viewController id="NDg-uj-oI9" customClass="HomeroomList" customModule="THS_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t7N-4k-KM4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLE-0K-nrY">
+                                <rect key="frame" x="150" y="77" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Homeroom A-C"/>
+                                <connections>
+                                    <action selector="ac:" destination="NDg-uj-oI9" eventType="touchUpInside" id="Med-ZZ-Xbh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv7-l6-oAq">
+                                <rect key="frame" x="146" y="143" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Homerooms D-G"/>
+                                <connections>
+                                    <action selector="dg:" destination="NDg-uj-oI9" eventType="touchUpInside" id="dWN-gs-mmo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebq-Uh-wtG">
+                                <rect key="frame" x="147" y="209" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Homerooms H-L"/>
+                                <connections>
+                                    <action selector="hl:" destination="NDg-uj-oI9" eventType="touchUpInside" id="RYw-23-B72"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJN-rH-TqI">
+                                <rect key="frame" x="145" y="278" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Homerooms M-O"/>
+                                <connections>
+                                    <action selector="mo:" destination="NDg-uj-oI9" eventType="touchUpInside" id="F03-oR-HeK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eav-wP-0PO">
+                                <rect key="frame" x="147" y="339" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Homerooms P-S"/>
+                                <connections>
+                                    <action selector="ps:" destination="NDg-uj-oI9" eventType="touchUpInside" id="Ov7-t3-Sve"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC8-w5-VpU">
+                                <rect key="frame" x="148" y="398" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Homerooms T-Z"/>
+                                <connections>
+                                    <action selector="tz:" destination="NDg-uj-oI9" eventType="touchUpInside" id="7GR-ad-cef"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jzp-e4-ZS9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DYx-xY-DxZ"/>
+                    <connections>
+                        <outlet property="ac" destination="ZLE-0K-nrY" id="gWG-YR-y1G"/>
+                        <outlet property="dg" destination="zv7-l6-oAq" id="rHx-U4-7PR"/>
+                        <outlet property="hl" destination="ebq-Uh-wtG" id="C9V-rY-bRd"/>
+                        <outlet property="mo" destination="TJN-rH-TqI" id="ozc-MD-y51"/>
+                        <outlet property="ps" destination="Eav-wP-0PO" id="Ojs-ZR-VQj"/>
+                        <outlet property="tz" destination="qC8-w5-VpU" id="sLv-Rz-fdC"/>
+                        <segue destination="Ee3-9T-UhW" kind="show" identifier="hr" id="skU-7S-yLq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZV-zl-hwk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3659" y="-580"/>
+        </scene>
         <!--Admin Delete Class classes-->
         <scene sceneID="MUf-q3-drF">
             <objects>
@@ -2454,35 +2460,6 @@
             </objects>
             <point key="canvasLocation" x="2623" y="-545"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="2sb-IH-ac7">
-            <objects>
-                <tableViewController id="SOD-e0-WNl" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FHe-6E-Ihl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZZ8-Er-R6K">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZZ8-Er-R6K" id="5xC-rZ-UdS">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="SOD-e0-WNl" id="qRW-8w-olo"/>
-                            <outlet property="delegate" destination="SOD-e0-WNl" id="FRk-ld-gdF"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="Afs-SF-T18"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z6e-b4-hjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3822" y="-494"/>
-        </scene>
     </scenes>
     <resources>
         <image name="icons8-a_home" width="25" height="25"/>
@@ -2492,8 +2469,7 @@
         <image name="playstore-icon" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Gxw-P8-9Ee"/>
         <segue reference="dDq-2P-avc"/>
-        <segue reference="Uaz-eD-zBZ"/>
+        <segue reference="KlD-im-3ta"/>
     </inferredMetricsTieBreakers>
 </document>

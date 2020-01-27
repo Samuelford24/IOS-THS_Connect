@@ -39,6 +39,11 @@ class adminVS_detail: UIViewController, UITableViewDataSource, UITableViewDelega
             
             print("2",student_id)
             Database.database().reference().child("Users").child(student_id!).child("User_info").observe(DataEventType.value, with: { (snapshot) in
+                if(!snapshot.exists()){
+                    b.child(student_id!).removeValue()
+                    
+                    
+                }
                 let postDict = snapshot.value as? [String : AnyObject] ?? [:]
                 
                 //   let dictionary2 = snapshot as? [String: AnyObject]
@@ -77,14 +82,32 @@ class adminVS_detail: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
         
     }
+   
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            //   NSLog("You selected cell number: \(indexPath.row)!")
            let indexPath = tableView.indexPathForSelectedRow!
         print(indexPath)
            let currentCell = tableView.cellForRow(at: indexPath)! as! custom_user_cell
         let uid = currentCell.uid.text!
-        let ac = UIAlertController(title: "Remove User", message:nil, preferredStyle: UIAlertController.Style.alert)
-               let OKaction = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { action in
+        let ac = UIAlertController(title: "What would you like to do?", message:nil, preferredStyle: UIAlertController.Style.alert)
+        let action = UIAlertAction(title: "Mark Student Absent", style: UIAlertAction.Style.default, handler: { action in
+            let date = Date()
+            let formatter = DateFormatter()
+            formatter.dateFormat = "MM.dd.yyyy"
+            let result = formatter.string(from: date)
+            print(result)
+             let ref = Database.database().reference()
+            let fr = ref.child("Users").child(uid).child("Attendance")
+            print(fr)
+            let gdf=fr.childByAutoId().key
+            print(gdf)
+            fr.child(gdf).setValue("Absent from assigned class on: " + result)
+            self.Users.remove(at: indexPath.row)
+                         tableView.deselectRow(at: indexPath, animated: true)
+                         self.tb_adminVS_detail.reloadData()
+            
+        })
+               let OKaction = UIAlertAction(title: "Remove Student", style: UIAlertAction.Style.default, handler: { action in
                 let ref = Database.database().reference()
                 let d = ref.child("Classes").child(self.receivedID).child("Students").child(uid)
                 print(d)
@@ -97,19 +120,23 @@ class adminVS_detail: UIViewController, UITableViewDataSource, UITableViewDelega
                 tableView.deselectRow(at: indexPath, animated: true)
                 self.tb_adminVS_detail.reloadData()
                })
-        let NOaction = UIAlertAction(title:"No", style: UIAlertAction.Style.default, handler:{ action in
+        let NOaction = UIAlertAction(title:"Cancel", style: UIAlertAction.Style.default, handler:{ action in
             ac.dismiss(animated: true, completion: nil)               })
         
                
                
         ac.addAction(NOaction)
                ac.addAction(OKaction)
+        ac.addAction(action)
                present(ac, animated: true, completion: nil)
            }
+    
            // passID = currentCell.class_id.text
            
            //performSegue(withIdentifier: "remove_detail", sender: self)
-           
+    func relodData() {
+        self.tb_adminVS_detail.reloadData()
+    }
            //self.performSegue(withIdentifier: "yourIdentifier", sender: self)
        }
 
