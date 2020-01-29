@@ -51,6 +51,7 @@
 		3ECA8E6F23BED587001EBA11 /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECA8E6E23BED587001EBA11 /* DeleteAccount.swift */; };
 		3ECBDC9B23DA85C20007FF45 /* HomeroomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBDC9A23DA85C20007FF45 /* HomeroomList.swift */; };
 		3ECBDC9D23DE41440007FF45 /* HRTeachersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBDC9C23DE41440007FF45 /* HRTeachersList.swift */; };
+		3ECBDCA123E11C9E0007FF45 /* StudentsInHomeroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBDCA023E11C9E0007FF45 /* StudentsInHomeroom.swift */; };
 		3ED3845D22D922EE00790672 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED3845C22D922EE00790672 /* NotificationService.swift */; };
 		3ED3846122D922EE00790672 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3ED3845A22D922EE00790672 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3EDE4B7222EFDB20008D8C4A /* removeClassDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDE4B7122EFDB20008D8C4A /* removeClassDetail.swift */; };
@@ -157,6 +158,7 @@
 		3ECA8E6E23BED587001EBA11 /* DeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccount.swift; sourceTree = "<group>"; };
 		3ECBDC9A23DA85C20007FF45 /* HomeroomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeroomList.swift; sourceTree = "<group>"; };
 		3ECBDC9C23DE41440007FF45 /* HRTeachersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRTeachersList.swift; sourceTree = "<group>"; };
+		3ECBDCA023E11C9E0007FF45 /* StudentsInHomeroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsInHomeroom.swift; sourceTree = "<group>"; };
 		3ED3845A22D922EE00790672 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED3845C22D922EE00790672 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		3ED3845E22D922EE00790672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				3E641F68229B58C300A0073E /* setting.swift */,
 				3E641F6222985B5600A0073E /* Admin.swift */,
 				3E3A29D122D12D91003CA7EF /* CollectionViewController.swift */,
+				3ECBDCA023E11C9E0007FF45 /* StudentsInHomeroom.swift */,
 				3ECBDC9C23DE41440007FF45 /* HRTeachersList.swift */,
 				3EDE4B7322EFDB2A008D8C4A /* HomeActivity */,
 				3E641F66229A352200A0073E /* reset_password.swift */,
@@ -694,6 +697,7 @@
 				3EEF5A69230440040013F139 /* YourInfo.swift in Sources */,
 				3E641F6322985B5600A0073E /* Admin.swift in Sources */,
 				3E12B20522D3FE1000973CF6 /* Class_detail.swift in Sources */,
+				3ECBDCA123E11C9E0007FF45 /* StudentsInHomeroom.swift in Sources */,
 				3EAFC6AA228EFB0900EC22A7 /* AppDelegate.swift in Sources */,
 				3ECBDC9D23DE41440007FF45 /* HRTeachersList.swift in Sources */,
 				3E641F69229B58C300A0073E /* setting.swift in Sources */,
