@@ -16,7 +16,7 @@ class customUserCell: UITableViewCell {
     
 }
 class StudentsInHomeroom: UITableViewController {
-    var teacher: String!
+    var teacher2: String!
     var hrRefToPass: String!
      var Users = [User]()
     override func viewDidLoad() {
@@ -24,7 +24,9 @@ class StudentsInHomeroom: UITableViewController {
              getStudents()
             }
             func getStudents(){
-                let  b = Database.database().reference().child(hrRefToPass).child(teacher)
+                print(teacher2!)
+                print(hrRefToPass)
+                let  b = Database.database().reference().child(hrRefToPass).child(teacher2)
                 b.observe(.childAdded, with: { (snapshot) in
                     print(snapshot.key)
                      let student_id = snapshot.value as? String
@@ -80,7 +82,7 @@ class StudentsInHomeroom: UITableViewController {
                 cell.name?.text = student.name
                 cell.grade?.text = student.grade
                 cell.studentID?.text = student.studentID
-                cell.uid?.text = student.uid
+        
                 return cell
             }
              override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

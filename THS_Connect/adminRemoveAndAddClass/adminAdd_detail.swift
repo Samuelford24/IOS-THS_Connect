@@ -31,11 +31,12 @@ dcl.text? = receivedClassName
         // Do any additional setup after loading the view.
     }
     //adds class to user
-    @IBAction func removeClass(_ sender: Any) {
+    @IBAction func AddClass(_ sender: Any) {
         let student_name = UserDefaults.standard.string(forKey: "studentName")! ?? ""
+        print(student_name)
         Database.database().reference().child("Users").observe(.childAdded, with: { (snapshot) in
-            let student = snapshot.childSnapshot(forPath: "User_info/name").value as? String
-            print("student")
+            let student = snapshot.childSnapshot(forPath: "User_info/studentID").value as? String
+            print(student)
             if(student == student_name){
                 let user_uid = snapshot.childSnapshot(forPath: "User_info/uid").value as? String
                 let b = Database.database().reference().child("Users").child(user_uid!).child("Classes").child(self.receiveClassID)

@@ -8,12 +8,13 @@
 
 import UIKit
 import Firebase
-class customCell_Classes: UITableViewCell{
-    @IBOutlet weak var dCL5: UILabel!
-    @IBOutlet weak var t5: UILabel!
+class customCell_Classes22: UITableViewCell{
     
-    @IBOutlet weak var rn5: UILabel!
-    @IBOutlet weak var id5: UILabel!
+    @IBOutlet weak var arc1: UILabel!
+    @IBOutlet weak var arc2: UILabel!
+    @IBOutlet weak var arc3: UILabel!
+    @IBOutlet weak var arcuid: UILabel!
+    
 }
 class adminRemoveC_showClasses: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var passedValue: String!
@@ -32,19 +33,19 @@ class adminRemoveC_showClasses: UIViewController, UITableViewDelegate, UITableVi
     }
     func findStudentandShowClasses() {
         Database.database().reference().child("Users").observe(.childAdded, with: { (snapshot) in
-            let student = snapshot.childSnapshot(forPath: "User_info/name").value as? String
-            print("student")
+            let student = snapshot.childSnapshot(forPath: "User_info/studentID").value as? String
+            print(student)
             if(student == self.passedValue!){
                 let user_uid = snapshot.childSnapshot(forPath: "User_info/uid").value as? String
-                
+                print(user_uid)
                 UserDefaults.standard.set(user_uid!, forKey: "user_id")
                 
-                print(user_uid
-                )
+                print("userREF",user_uid)
+                
                 Database.database().reference().child("Users").child(user_uid!).child("Classes").observe(.childAdded, with: { (snapshot) in
                     let classRef = snapshot.value as? String
                     
-                   print(classRef)
+                  
                     Database.database().reference().child("Classes").child(classRef!).child("class_info").observe(DataEventType.value, with: {(snapshot)   in
                         let postDict = snapshot.value as? [String : AnyObject] ?? [:]
                   
@@ -74,13 +75,14 @@ class adminRemoveC_showClasses: UIViewController, UITableViewDelegate, UITableVi
         // let use a hack for now, we actually need to dequeue our cells for memory efficiency
         //        let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: cellId)
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell5", for: indexPath) as! customCell_Classes
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell22", for: indexPath) as! customCell_Classes22
         
         let data_class = classes5[indexPath.row]
-        cell.dCL5?.text = data_class.date_clasname
-        cell.t5?.text = data_class.teacher
-        cell.rn5?.text = data_class.room_number
-        cell.id5?.text = data_class.class_id
+        print("data",data_class)
+        cell.arc1?.text = data_class.date_clasname
+        cell.arc2?.text = data_class.teacher
+        cell.arc3?.text = data_class.room_number
+        cell.arcuid?.text = data_class.class_id
         
         
         return cell
@@ -88,12 +90,12 @@ class adminRemoveC_showClasses: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //   NSLog("You selected cell number: \(indexPath.row)!")
         let indexPath = tableView.indexPathForSelectedRow!
-        let currentCell = tableView.cellForRow(at: indexPath)! as! customCell_Classes
-        pass1 = currentCell.dCL5.text
+        let currentCell = tableView.cellForRow(at: indexPath)! as! customCell_Classes22
+        pass1 = currentCell.arc1.text
         
-        pass2 = currentCell.t5.text
-        pass3 = currentCell.rn5.text
-        pass4 = currentCell.id5.text
+        pass2 = currentCell.arc2.text
+        pass3 = currentCell.arc3.text
+        pass4 = currentCell.arcuid.text
         // passID = currentCell.class_id.text
         
         performSegue(withIdentifier: "admin_remove_detail", sender: self)

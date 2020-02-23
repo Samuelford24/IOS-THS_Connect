@@ -26,6 +26,7 @@ class HRTeachersList: UITableViewController {
         getTeachers()
     }
     func getTeachers(){
+        print(HRref!)
         let  b = Database.database().reference().child(HRref)
         b.observe(.childAdded, with: { (snapshot) in
             print(snapshot.key)
@@ -68,9 +69,11 @@ cell.textLabel?.text = teachers[indexPath.row]
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier=="HrSTUDENTS") {
-            let viewController = segue.destination as! StudentsInHomeroom
-               viewController.teacher = teacher
-            viewController.hrRefToPass = hrRefToPass
+            var viewController = segue.destination as! StudentsHR
+            print("teacher",teacher)
+            print("hrRef",hrRefToPass)
+               viewController.teacher2 = teacher
+            viewController.hrRefToPass = HRref
            
        
         // Get the new view controller using segue.destination.

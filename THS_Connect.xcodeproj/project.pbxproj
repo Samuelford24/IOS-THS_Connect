@@ -40,6 +40,7 @@
 		3EAFC6B6228EFB0A00EC22A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC6B4228EFB0A00EC22A7 /* LaunchScreen.storyboard */; };
 		3EAFC6C1228EFB0A00EC22A7 /* THS_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC6C0228EFB0A00EC22A7 /* THS_ConnectTests.swift */; };
 		3EAFC6CC228EFB0A00EC22A7 /* THS_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC6CB228EFB0A00EC22A7 /* THS_ConnectUITests.swift */; };
+		3EC14A9624022AB00078AB8F /* StudentsHR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC14A9524022AB00078AB8F /* StudentsHR.swift */; };
 		3EC6956522B0769300940E43 /* ShowClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6956422B0769300940E43 /* ShowClasses.swift */; };
 		3EC6956822B0778B00940E43 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6956722B0778B00940E43 /* Class.swift */; };
 		3EC6956A22B1CAC800940E43 /* Math_classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6956922B1CAC800940E43 /* Math_classes.swift */; };
@@ -54,6 +55,8 @@
 		3ECBDCA123E11C9E0007FF45 /* StudentsInHomeroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBDCA023E11C9E0007FF45 /* StudentsInHomeroom.swift */; };
 		3ED3845D22D922EE00790672 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED3845C22D922EE00790672 /* NotificationService.swift */; };
 		3ED3846122D922EE00790672 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3ED3845A22D922EE00790672 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3EDAC5A324031BD3005ED1AC /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAC5A224031BD3005ED1AC /* Attendance.swift */; };
+		3EDAC5A524031C64005ED1AC /* StudentsClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAC5A424031C64005ED1AC /* StudentsClasses.swift */; };
 		3EDE4B7222EFDB20008D8C4A /* removeClassDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDE4B7122EFDB20008D8C4A /* removeClassDetail.swift */; };
 		3EE9F0D222B5903F001E04CC /* admin_add_classViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9F0D122B5903F001E04CC /* admin_add_classViewController.swift */; };
 		3EEF5A69230440040013F139 /* YourInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEF5A68230440040013F139 /* YourInfo.swift */; };
@@ -147,6 +150,7 @@
 		3EAFC6C7228EFB0A00EC22A7 /* THS_ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THS_ConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAFC6CB228EFB0A00EC22A7 /* THS_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THS_ConnectUITests.swift; sourceTree = "<group>"; };
 		3EAFC6CD228EFB0A00EC22A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EC14A9524022AB00078AB8F /* StudentsHR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsHR.swift; sourceTree = "<group>"; };
 		3EC6956422B0769300940E43 /* ShowClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowClasses.swift; sourceTree = "<group>"; };
 		3EC6956722B0778B00940E43 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		3EC6956922B1CAC800940E43 /* Math_classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math_classes.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 		3ED3845A22D922EE00790672 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED3845C22D922EE00790672 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		3ED3845E22D922EE00790672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EDAC5A224031BD3005ED1AC /* Attendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
+		3EDAC5A424031C64005ED1AC /* StudentsClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsClasses.swift; sourceTree = "<group>"; };
 		3EDE4B7122EFDB20008D8C4A /* removeClassDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = removeClassDetail.swift; sourceTree = "<group>"; };
 		3EE9F0D122B5903F001E04CC /* admin_add_classViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admin_add_classViewController.swift; sourceTree = "<group>"; };
 		3EEF5A68230440040013F139 /* YourInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourInfo.swift; sourceTree = "<group>"; };
@@ -288,8 +294,6 @@
 				3E641F68229B58C300A0073E /* setting.swift */,
 				3E641F6222985B5600A0073E /* Admin.swift */,
 				3E3A29D122D12D91003CA7EF /* CollectionViewController.swift */,
-				3ECBDCA023E11C9E0007FF45 /* StudentsInHomeroom.swift */,
-				3ECBDC9C23DE41440007FF45 /* HRTeachersList.swift */,
 				3EDE4B7322EFDB2A008D8C4A /* HomeActivity */,
 				3E641F66229A352200A0073E /* reset_password.swift */,
 				3E3A29D322D133FD003CA7EF /* Class_CollectionViewCell.swift */,
@@ -357,7 +361,12 @@
 		3ECBDC9923DA853A0007FF45 /* Homeroom */ = {
 			isa = PBXGroup;
 			children = (
+				3ECBDCA023E11C9E0007FF45 /* StudentsInHomeroom.swift */,
+				3ECBDC9C23DE41440007FF45 /* HRTeachersList.swift */,
 				3ECBDC9A23DA85C20007FF45 /* HomeroomList.swift */,
+				3EC14A9524022AB00078AB8F /* StudentsHR.swift */,
+				3EDAC5A224031BD3005ED1AC /* Attendance.swift */,
+				3EDAC5A424031C64005ED1AC /* StudentsClasses.swift */,
 			);
 			path = Homeroom;
 			sourceTree = "<group>";
@@ -704,10 +713,13 @@
 				3EC6956522B0769300940E43 /* ShowClasses.swift in Sources */,
 				3ECA8E6D23BE7301001EBA11 /* ToggleClasses.swift in Sources */,
 				3E9DB30F22F66FE900EC4D02 /* adminGetName.swift in Sources */,
+				3EC14A9624022AB00078AB8F /* StudentsHR.swift in Sources */,
 				3EAFC6AC228EFB0900EC22A7 /* FirstViewController.swift in Sources */,
 				3E641F67229A352200A0073E /* reset_password.swift in Sources */,
+				3EDAC5A524031C64005ED1AC /* StudentsClasses.swift in Sources */,
 				3E641F5F2297136800A0073E /* Login.swift in Sources */,
 				3EC6957122B1CBDF00940E43 /* Technology_classes.swift in Sources */,
+				3EDAC5A324031BD3005ED1AC /* Attendance.swift in Sources */,
 				3E9DB30322F4F55200EC4D02 /* adminVS_detail.swift in Sources */,
 				3E641F612297824700A0073E /* Register.swift in Sources */,
 				3E3A29D822D151F3003CA7EF /* custom_class_cell.swift in Sources */,
