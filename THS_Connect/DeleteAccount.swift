@@ -31,18 +31,19 @@ class DeleteAccount: UIViewController {
         var credential: AuthCredential = EmailAuthProvider.credential(withEmail: email.text!, password: password.text!)
 
         // Prompt the user to re-provide their sign-in credentials
-        let ref=Database.database().reference().child("Users").child(user!.uid)
-        ref.removeValue()
+       // let ref=Database.database().reference().child("Users").child(user!.uid)
+       // ref.removeValue()
         user?.reauthenticate(with: credential) { error in
-          if let error = error {
+            if error != nil{
             // An error happened.
-            self.showAlertMessage(title: "Error Deleting Account", message: "Please make sure you enterd your correct email and password!")
+                self.showAlertMessage(title: "Error Deleting Account", message: "Please make sure you enterd your correct email and password!")
           } else {
             let ref=Database.database().reference().child("Users").child(user!.uid)
             ref.removeValue(completionBlock: { (error, ref) in
             user?.delete{ error in
-            if let error = error {
+            if  error != nil {
               // An error happened.
+                print("Error 2")
                 self.showAlertMessage(title: "Error Deleting Account", message: "Please check your connection and try again!")
             } else {
                 self.performSegue(withIdentifier: "toLogin", sender: nil)

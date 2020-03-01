@@ -96,7 +96,7 @@ class StudentsHR: UIViewController, UITableViewDelegate, UITableViewDataSource {
 func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
                let indexPath = tableView.indexPathForSelectedRow!
                   let currentCell = tableView.cellForRow(at: indexPath)! as! customUserCell2                //NEED TO ADD UID AND GET IT FOR ATTENDANCE AND VIEWING STUDENTS CLASSES.
-    let ac = UIAlertController(title: "Check" + name + "'s Attendance or View Student's Classes", message: nil, preferredStyle: UIAlertController.Style.alert)
+    let ac = UIAlertController(title: "View " + name + "'s Attendance or Classes", message: nil, preferredStyle: UIAlertController.Style.alert)
          let OKaction = UIAlertAction(title: "Check Attendance", style: UIAlertAction.Style.default, handler: { action in
             
             self.performSegue(withIdentifier: "attendance", sender: nil)
@@ -108,7 +108,7 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          })
     let Cancelaction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { action in
                 ac.dismiss(animated: false, completion: nil)
-             
+    tableView.deselectRow(at: indexPath, animated: true)
             })
          
          
@@ -125,9 +125,10 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
                          var viewController = segue.destination as! Attendance
                         
                         viewController.uid = uidtobePassed
+                    }
                         if(segue.identifier=="classes"){
-                           var viewController = segue.destination as! StudentsClasses
-                            viewController.uid=uidtobePassed
+                           var viewController2 = segue.destination as! StudentsClasses
+                            viewController2.uid=uidtobePassed
                         }
                         
                     
@@ -136,4 +137,4 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
                  }
               
            }
-}
+

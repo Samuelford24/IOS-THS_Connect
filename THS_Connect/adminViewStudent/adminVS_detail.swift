@@ -102,9 +102,7 @@ class adminVS_detail: UIViewController, UITableViewDataSource, UITableViewDelega
             let gdf=fr.childByAutoId().key
             print(gdf)
             fr.child(gdf).setValue("Absent from assigned class on: " + result)
-            self.Users.remove(at: indexPath.row)
-                         tableView.deselectRow(at: indexPath, animated: true)
-                         self.tb_adminVS_detail.reloadData()
+            
             
         })
                let OKaction = UIAlertAction(title: "Remove Student", style: UIAlertAction.Style.default, handler: { action in

@@ -13,12 +13,17 @@ import FirebaseAuth
 class Login: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    var authListener: AuthStateDidChangeListenerHandle?
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
-        if Auth.auth().currentUser != nil && Auth.auth().currentUser!.isEmailVerified {
+        authListener = Auth.auth().addStateDidChangeListener { (auth, user) in
+         
+            if user != nil && user!.isEmailVerified {
+                print("USEr",user)
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "tab")
             self.present(vc!, animated: true, completion: nil)
         }
+    }
     }
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -33,12 +33,13 @@ Database.database().reference().child("Users").child(userID).child("User_info").
     //print(name)
     let email = snapshot.childSnapshot(forPath: "email").value as? String
   //  print(email)
+    let Loading="Loading..."
     let grade = snapshot.childSnapshot(forPath: "grade").value as? String
     let studentID = snapshot.childSnapshot(forPath: "studentID").value as? String
-    self.nameLabel.text? = name!
-    self.emailLabel.text? = email!
-    self.gradeLabel.text? = grade!
-    self.studentIDLabel.text? = studentID!
+    self.nameLabel.text? = name ?? Loading
+    self.emailLabel.text? = email ?? Loading
+    self.gradeLabel.text? = grade ?? Loading
+    self.studentIDLabel.text? = studentID ?? Loading
 })
 
     /*

@@ -13,11 +13,13 @@ class User: NSObject {
     var grade: String!
     var studentID: String!
     var uid: String!
+    var homeroom: String!
     init(dictionary: [String: Any]) {
         self.name = dictionary["name"] as? String ?? ""
         self.grade = dictionary["grade"] as? String ?? ""
         self.studentID = dictionary["studentID"] as? String ?? ""
         self.uid = dictionary["uid"] as? String ?? ""
+         self.homeroom = dictionary["homeroom"] as? String ?? ""
     }
     
 

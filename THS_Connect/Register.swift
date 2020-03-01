@@ -103,7 +103,7 @@ class Register: UIViewController {
                     Auth.auth().currentUser?.sendEmailVerification(completion: nil)
                     let ref = Database.database().reference()
                     let usersReference = ref.child("Users").child(uid).child("User_info")
-                    let values = ["email": self.email.text!, "name": self.name.text!, "grade": self.grade.text!,"studentID":self.studentID.text!, "uid": Auth.auth().currentUser!.uid]
+                    let values = ["email": self.email.text!, "name": self.name.text!, "grade": self.grade.text!,"studentID":self.studentID.text!, "uid": Auth.auth().currentUser!.uid, "homeroom": hr2]
                     usersReference.setValue(values) {
                     (error:Error?, ref:DatabaseReference) in
                     if error != nil {

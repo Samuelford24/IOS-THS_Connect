@@ -40,6 +40,8 @@
 		3EAFC6B6228EFB0A00EC22A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC6B4228EFB0A00EC22A7 /* LaunchScreen.storyboard */; };
 		3EAFC6C1228EFB0A00EC22A7 /* THS_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC6C0228EFB0A00EC22A7 /* THS_ConnectTests.swift */; };
 		3EAFC6CC228EFB0A00EC22A7 /* THS_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC6CB228EFB0A00EC22A7 /* THS_ConnectUITests.swift */; };
+		3EBF1E5E240A110A0065B2B3 /* HomeroomMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF1E5D240A110A0065B2B3 /* HomeroomMain.swift */; };
+		3EBF1E60240B51F90065B2B3 /* SetHomeroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF1E5F240B51F80065B2B3 /* SetHomeroom.swift */; };
 		3EC14A9624022AB00078AB8F /* StudentsHR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC14A9524022AB00078AB8F /* StudentsHR.swift */; };
 		3EC6956522B0769300940E43 /* ShowClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6956422B0769300940E43 /* ShowClasses.swift */; };
 		3EC6956822B0778B00940E43 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6956722B0778B00940E43 /* Class.swift */; };
@@ -150,6 +152,8 @@
 		3EAFC6C7228EFB0A00EC22A7 /* THS_ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THS_ConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAFC6CB228EFB0A00EC22A7 /* THS_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THS_ConnectUITests.swift; sourceTree = "<group>"; };
 		3EAFC6CD228EFB0A00EC22A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBF1E5D240A110A0065B2B3 /* HomeroomMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeroomMain.swift; sourceTree = "<group>"; };
+		3EBF1E5F240B51F80065B2B3 /* SetHomeroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetHomeroom.swift; sourceTree = "<group>"; };
 		3EC14A9524022AB00078AB8F /* StudentsHR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsHR.swift; sourceTree = "<group>"; };
 		3EC6956422B0769300940E43 /* ShowClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowClasses.swift; sourceTree = "<group>"; };
 		3EC6956722B0778B00940E43 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 		3EAFC69D228EFB0900EC22A7 = {
 			isa = PBXGroup;
 			children = (
+				3EBF1E5D240A110A0065B2B3 /* HomeroomMain.swift */,
 				3ECA8E6B23BE53D3001EBA11 /* AdminToggleClasses */,
 				3EAFC6A8228EFB0900EC22A7 /* THS_Connect */,
 				3EAFC6BF228EFB0A00EC22A7 /* THS_ConnectTests */,
@@ -303,6 +308,7 @@
 				3EEF5A68230440040013F139 /* YourInfo.swift */,
 				3ECA8E6C23BE7301001EBA11 /* ToggleClasses.swift */,
 				3EAFC6AF228EFB0900EC22A7 /* Main.storyboard */,
+				3EBF1E5F240B51F80065B2B3 /* SetHomeroom.swift */,
 				3EAFC6B2228EFB0A00EC22A7 /* Assets.xcassets */,
 				3EAFC6B4228EFB0A00EC22A7 /* LaunchScreen.storyboard */,
 				3E9DB31222F89F2B00EC4D02 /* GradientView.swift */,
@@ -696,6 +702,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBF1E5E240A110A0065B2B3 /* HomeroomMain.swift in Sources */,
 				3E9DB30522F509A400EC4D02 /* User.swift in Sources */,
 				3E3A29D222D12D91003CA7EF /* CollectionViewController.swift in Sources */,
 				3ECA8E6F23BED587001EBA11 /* DeleteAccount.swift in Sources */,
@@ -736,6 +743,7 @@
 				3E9DB30C22F62A3A00EC4D02 /* adminDeleteClass_detail.swift in Sources */,
 				3E9DB31722F9EC6A00EC4D02 /* adminAdd_subjects.swift in Sources */,
 				3EC6956822B0778B00940E43 /* Class.swift in Sources */,
+				3EBF1E60240B51F90065B2B3 /* SetHomeroom.swift in Sources */,
 				3E9DB31B22F9ECBD00EC4D02 /* adminAdd_detail.swift in Sources */,
 				3E9DB31522F8FE5C00EC4D02 /* adminRemoveClasses_detail.swift in Sources */,
 				3E9DB30122F4D0B300EC4D02 /* adminVS_classes.swift in Sources */,
@@ -859,7 +867,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -914,7 +922,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -933,12 +941,14 @@
 				CODE_SIGN_ENTITLEMENTS = THS_Connect/THS_Connect.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = TM27X9WQSC;
 				INFOPLIST_FILE = THS_Connect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "samuel.THS-Connect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -956,12 +966,14 @@
 				CODE_SIGN_ENTITLEMENTS = THS_Connect/THS_Connect.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = TM27X9WQSC;
 				INFOPLIST_FILE = THS_Connect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "samuel.THS-Connect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1061,6 +1073,7 @@
 			baseConfigurationReference = D5292D7E48A37BA8F5767FC4 /* Pods-THS_Connect-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = TM27X9WQSC;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
@@ -1069,6 +1082,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "samuel.THS-Connect.OneSignalNotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1082,6 +1096,7 @@
 			baseConfigurationReference = 2DE27B246C3D06891D6168D9 /* Pods-THS_Connect-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = TM27X9WQSC;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
@@ -1090,6 +1105,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "samuel.THS-Connect.OneSignalNotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

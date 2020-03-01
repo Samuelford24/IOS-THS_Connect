@@ -35,6 +35,15 @@ class adminRemoveC_showClasses: UIViewController, UITableViewDelegate, UITableVi
         Database.database().reference().child("Users").observe(.childAdded, with: { (snapshot) in
             let student = snapshot.childSnapshot(forPath: "User_info/studentID").value as? String
             print(student)
+            print("SSSS",snapshot.key)
+            if (student==nil){
+            //    System.out.println("KEY" + dataSnapshot.getKey());
+                Database.database().reference().child("Users").child(snapshot.key)
+                
+              //  g = database.getReference("Users").child( dataSnapshot.getKey());
+              //  System.out.println(g);
+               // g.removeValue();
+            }
             if(student == self.passedValue!){
                 let user_uid = snapshot.childSnapshot(forPath: "User_info/uid").value as? String
                 print(user_uid)
