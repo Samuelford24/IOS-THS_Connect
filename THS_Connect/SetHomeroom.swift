@@ -25,10 +25,10 @@ class SetHomeroom: UIViewController {
             let c = Database.database().reference().child(homeroomEntry.text!)
             print(c)
             
-                c.observe(.childAdded, with: { (snapshot) in
+                c.observe(.value, with: { (snapshot) in
                 print(snapshot)
                     //need to fix
-                if(snapshot==nil){
+                    if(!snapshot.exists()){
                     let ac = UIAlertController(title: "Homeroom doesn't exist", message:"Please try entering a correct homeroom reference; if the problem persists, please email svhsdev@vigoschools.org", preferredStyle: UIAlertController.Style.alert)
                           let OKaction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { action in
                               ac.dismiss(animated: true, completion: nil)               })
